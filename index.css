@@ -1,0 +1,142 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@700&display=swap');
+
+@keyframes animate {
+    0%,10%,100%
+     {
+      width: 0;
+    }
+    70% ,90%
+    {
+      width: 100%;
+    }
+  }
+  
+ 
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+  }
+  body{
+     background-color: black;
+     ;
+
+  }
+ 
+  
+.paper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 25vh;
+  }
+  
+.paper h5{
+    position: relative;
+    font-size: 6vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52 ;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+  
+ .paper h5::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01FE87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01FE87;
+     animation: animate 6s linear infinite;  
+     overflow: hidden;
+  }
+  .paper h2{
+    padding: 0px;
+    margin: 0px;
+    font: size 50px;
+    position: absolute;
+    color: #b4e8d6;
+    text-align: center;
+    top: 17%;
+    width:100%;
+
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+ 
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #32f299;
+    color: #0c0c0c;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  .button:hover {
+    background-color: #0062cc;
+  }
+  .my-button{
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 300px;
+  height: 50px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 0 5px;
+    opacity: 1;
+  }
+  
+.headings
+{
+  display : flex;
+}
+
+.page{
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+
+}
+.page h1{ 
+  font-size: 300px;
+  font-family: 'Merriweather', serif;
+
+}
+h1{
+  color: white;
+}
+.text{
+    color: #32f299;
+
+}
